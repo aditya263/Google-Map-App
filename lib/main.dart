@@ -9,7 +9,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,7 +30,6 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     Future.delayed(const Duration(seconds: 5)).then((value) =>
         Navigator.of(context).pushReplacement(
@@ -42,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
+        child: SizedBox(
           height: 200,
           width: 200,
           child: LottieBuilder.asset('assets/animassets/mapanimation.json'),

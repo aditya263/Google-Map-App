@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -30,7 +29,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Stack(
               children: [
-                Container(
+                SizedBox(
                   height: screenHeight,
                   width: screenWidth,
                   child: GoogleMap(
